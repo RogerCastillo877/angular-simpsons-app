@@ -8,6 +8,7 @@ import { Quote } from '../../models/Quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.scss']
 })
+
 export class QuoteComponent implements OnInit, AfterViewInit {
 
   // @ViewChild("newQuoteButton") button!: ElementRef;

@@ -1,2 +1,4 @@
-<app-quote></app-quote>
+<app-quote-card></app-quote-card>
+
+{{ this.quote$ | async | json }}
 <button #newQuoteButton (click)="getNewQuote()">Get One</button>

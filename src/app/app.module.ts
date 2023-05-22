@@ -7,6 +7,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { UiModule } from './ui/ui.module';
 import { ApiQuoteService } from './features/quotes/services/api-quote/api-quote.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ApiQuoteService } from './features/quotes/services/api-quote/api-quote.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UiModule
+    UiModule,
+    HttpClientModule
   ],
   providers: [ApiQuoteService],
   bootstrap: [AppComponent]
