@@ -6,6 +6,8 @@ import { UiModule } from 'src/app/ui/ui.module';
 import { SearchByCharacterComponent } from './components/search-by-character/search-by-character.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { QuoteCardComponent } from './components/quote-card/quote-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiQuoteService } from './services/api-quote/api-quote.service';
 
 
 
@@ -20,6 +22,10 @@ import { QuoteCardComponent } from './components/quote-card/quote-card.component
     CommonModule,
     QuotesRoutingModule,
     UiModule,
+    HttpClientModule,
+  ],
+  providers: [
+    QuoteComponent,
   ]
 })
 export class QuotesModule { }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { QuotePagesComponent } from './pages/quote-pages/quote-pages.component';
 const routes: Routes = [
-  { path: '', component: QuotePagesComponent },
+  { path: 'quote', component: QuotePagesComponent },
 ];
 
 @NgModule({
